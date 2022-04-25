@@ -1,0 +1,50 @@
+// oops with java basic question 
+// classes and objects.
+
+Q:1 create classes of car and train and their objects. with attribute like color, speed, wheels, bogies like that and their any behaviours -
+
+Sol -
+
+import java.io.*;
+import java.lang.*;
+
+class car{
+    String color;
+    int wheels;
+    int speed;
+    
+    void drive(){
+        System.out.println(" car can drive with speed "+ this.speed);
+    }
+}
+class train{
+    String name;
+    String color;
+    int bogies;
+    int speed;
+    
+    void run(){
+        System.out.println(this.name +" "+ " carrying "+this.bogies +" boggies is running with " +this.speed +" speed " );
+    }
+}
+
+class GFG {
+    
+	public static void main (String[] args) {
+	  
+	  car bmw = new car();
+	  bmw.color = "Green";
+	  bmw.speed = 120;
+	  bmw.wheels = 4;
+	  
+	  train t1 = new train();
+	  t1.name = "Vande Bharat";
+	  t1.color ="blue";
+	  t1.bogies = 12;
+	  t1.speed = 80;
+	  t1.run();
+	System.out.println(t1.color);
+	System.out.println(bmw.color);
+	bmw.drive();
+	}
+}
