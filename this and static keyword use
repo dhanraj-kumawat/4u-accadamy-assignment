@@ -1,0 +1,40 @@
+Q: create a class of student and then create 5 students's obj. with default values.--
+
+sol:
+
+class student{
+  String name;
+   int roll;
+  int marks;
+  static int key;
+  student(){
+    name ="Ram";
+    roll =key ;
+    marks = 75;
+    key++;
+  }
+  student(String name, int roll, int marks){
+    this.name = name;
+    this.roll = roll;
+    this.marks = marks;
+  }
+}
+public class useOfThisStatic{
+ 
+  public static void main(String[] args) {
+   
+    student s1 = new student();
+    student s2 = new student();
+    student s3 = new student();
+    student s4 = new student("Hitesh", 34, 78);
+    student s5 = new student("Prem", 24, 95);
+    System.out.println(s2.roll); 
+    System.out.println(s1.roll); 
+    System.out.println(s4.roll); 
+    System.out.println(s2.name); 
+    System.out.println(s4.name); 
+    System.out.println(s5.name); 
+    System.out.println(s5.marks); 
+    System.out.println(s3.roll); 
+  }
+}
